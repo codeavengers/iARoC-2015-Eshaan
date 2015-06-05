@@ -36,10 +36,6 @@ public class Brain extends IRobotCreateAdapter {
         readSensors(SENSORS_BUMPS_AND_WHEEL_DROPS);
         int sensor = getInfraredByte();
 
-        if (sensor == 255) {
-            driveDirect(500, 500);
-        }
-
 if (sensor == 252){
     driveDirect(500, 500);
 }
